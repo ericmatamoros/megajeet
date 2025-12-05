@@ -15,8 +15,12 @@ const londrinaSketch = Londrina_Sketch({
 })
 
 export const metadata: Metadata = {
-  title: 'MEGAJeet - The Ultimate Jeet',
-  description: 'Welcome to MEGAJeet - Where legends are made and pizzas are delivered',
+  title: 'MEGAJEET',
+  description: 'MEGAJEET: WHERE DIAMOND HANDS ARE MADE',
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
