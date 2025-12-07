@@ -18,7 +18,7 @@ export default function Home() {
         <header className="header">
           <h1 className="logo">MegaJEET</h1>
           <div className="icon-buttons">
-            <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="icon-btn" aria-label="X (Twitter)">
+            <a href="https://x.com/megajeet6342" target="_blank" rel="noopener noreferrer" className="icon-btn" aria-label="X (Twitter)">
               <Image src="/x_icon.png" alt="X" width={34} height={34} />
             </a>
             <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" className="icon-btn" aria-label="Telegram">
@@ -29,15 +29,15 @@ export default function Home() {
             </a>
           </div>
         </header>
-        <Image
-          src="/jeet_big.png"
-          alt="MEGAJEET Trading Room"
-          width={1920}
-          height={1098}
-          className="hero-image"
-          priority
+        <video
+          className="hero-video"
+          src="/jeet_big.webm"
+          autoPlay
+          loop
+          muted
+          playsInline
         />
-        <div className="contract-address" onClick={copyToClipboard} title="Click to copy">
+        <div className="contract-address" aria-label="Contract address">
           {contractAddress}
         </div>
       </section>

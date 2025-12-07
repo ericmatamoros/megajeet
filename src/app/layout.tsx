@@ -16,7 +16,7 @@ const londrinaSketch = Londrina_Sketch({
 
 export const metadata: Metadata = {
   title: 'MEGAJEET',
-  description: 'MEGAJEET: WHERE DIAMOND HANDS ARE MADE',
+  description: 'MegaJEET: The Jeet Mascot',
   icons: {
     icon: '/favicon.png',
     apple: '/favicon.png',
