@@ -80,20 +80,25 @@ export default function Home() {
         />
         
         {/* Interactive Lotion Bottle Overlay */}
+        <div className="lotion-overlay">
+          <Image 
+            src={getLotionImage()}
+            alt="Jeet Lotion"
+            width={3840}
+            height={2160}
+            priority
+            unoptimized
+          />
+        </div>
+        
+        {/* Clickable area - only on the lotion bottle */}
         <div 
-          className="lotion-overlay"
+          className="lotion-clickable"
           onClick={handleLotionClick}
           role="button"
           tabIndex={0}
           aria-label="Click the lotion bottle"
-        >
-          <Image 
-            src={getLotionImage()}
-            alt="Jeet Lotion"
-            fill
-            priority
-          />
-        </div>
+        />
         
         <div className="contract-address" aria-label="Contract address">
           {contractAddress}
