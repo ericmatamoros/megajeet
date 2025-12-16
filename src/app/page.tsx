@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 
 export default function Home() {
@@ -9,6 +9,19 @@ export default function Home() {
   
   const [clickCount, setClickCount] = useState(0)
   const [isPressed, setIsPressed] = useState(false)
+
+  // Preload all lotion images to prevent loading delays
+  useEffect(() => {
+    const images = [
+      '/jeet_lotion_up.png',
+      '/jeet_lotion_down_no_lotion.png',
+      '/jeet_lotion_down.png'
+    ]
+    images.forEach((src) => {
+      const img = new window.Image()
+      img.src = src
+    })
+  }, [])
 
   const copyToClipboard = () => {
     const address = contractAddress.replace('CA: ', '')
