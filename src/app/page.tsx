@@ -79,7 +79,6 @@ export default function Home() {
             alt="Jeet Lotion"
             fill
             priority
-            style={{ objectFit: 'cover' }}
           />
         </div>
         

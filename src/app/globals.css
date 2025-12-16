@@ -232,6 +232,11 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+.lotion-overlay img {
+  object-fit: cover !important;
+  object-position: center 20% !important;
+}
+
 .lotion-overlay:hover {
   opacity: 0.98;
 }
